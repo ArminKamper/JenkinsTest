@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BowlingGame.Contracts;
+using Autofac;
 
 namespace BowlingGame
 {
@@ -11,7 +13,10 @@ namespace BowlingGame
     {
         static void Main(string[] args)
         {
-            var game = new Game();
+            var cb = new ContainerBuilder();
+            cb.RegisterType<Game>().As<IGame>();
+
+            IGame game = cb.Build().Resolve<IGame>();
             game.AddRoll(4);
 
             

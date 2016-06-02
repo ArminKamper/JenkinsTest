@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingGame", "BownlingGame
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingGame_Test", "BowlingGame_Test\BowlingGame_Test.csproj", "{CA679545-58A3-4C1A-BC10-81411E5EBCAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramworkMigrations", "EntityFramworkMigrations\EntityFramworkMigrations.csproj", "{FBC6CAB6-6F50-4C9C-ADB2-153FC9D59C4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CA679545-58A3-4C1A-BC10-81411E5EBCAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA679545-58A3-4C1A-BC10-81411E5EBCAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA679545-58A3-4C1A-BC10-81411E5EBCAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC6CAB6-6F50-4C9C-ADB2-153FC9D59C4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC6CAB6-6F50-4C9C-ADB2-153FC9D59C4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC6CAB6-6F50-4C9C-ADB2-153FC9D59C4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC6CAB6-6F50-4C9C-ADB2-153FC9D59C4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

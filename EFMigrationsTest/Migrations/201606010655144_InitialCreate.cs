@@ -1,13 +1,12 @@
-namespace EntityFramworkMigrations.Migrations
+namespace EFMigrationTest.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class InitialCreate : DbMigration
     {
         public override void Up()
         {
-            CreateTable(
+            this.CreateTable(
                 "dbo.Blogs",
                 c => new
                     {
@@ -20,7 +19,7 @@ namespace EntityFramworkMigrations.Migrations
         
         public override void Down()
         {
-            DropTable("dbo.Blogs");
+            this.DropTable("dbo.Blogs");
         }
     }
 }

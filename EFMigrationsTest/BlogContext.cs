@@ -1,10 +1,7 @@
-﻿using System.Data.Entity;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Data.Entity.Infrastructure;
-
-namespace EntityFramworkMigrations
+﻿namespace EFMigrationTest
 {
+    using System.Data.Entity;
+
     public class BlogContext : DbContext
     {
         public BlogContext() : base("name=BlogPostDb")

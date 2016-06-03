@@ -1,13 +1,12 @@
-namespace EntityFramworkMigrations.Migrations
+namespace EFMigrationTest.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class AddPost : DbMigration
     {
         public override void Up()
         {
-            CreateTable(
+            this.CreateTable(
                 "dbo.Posts",
                 c => new
                     {
@@ -21,16 +20,16 @@ namespace EntityFramworkMigrations.Migrations
                 .Index(t => t.BlogId)
                 .Index(p => p.Title, unique: true);
             
-            AddColumn("dbo.Blogs", "Rating", c => c.Int(nullable: false));
+            this.AddColumn("dbo.Blogs", "Rating", c => c.Int(nullable: false));
         }
         
         public override void Down()
         {
-            DropIndex("dbo.Posts", new[] { "Title" });
-            DropIndex("dbo.Posts", new[] { "BlogId" });
-            DropForeignKey("dbo.Posts", "BlogId", "dbo.Blogs");
-            DropColumn("dbo.Blogs", "Rating");
-            DropTable("dbo.Posts");
+            this.DropIndex("dbo.Posts", new[] { "Title" });
+            this.DropIndex("dbo.Posts", new[] { "BlogId" });
+            this.DropForeignKey("dbo.Posts", "BlogId", "dbo.Blogs");
+            this.DropColumn("dbo.Blogs", "Rating");
+            this.DropTable("dbo.Posts");
         }
     }
 }

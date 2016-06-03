@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EntityFramworkMigrations
+﻿namespace EFMigrationTest
 {
+    using System.Collections.Generic;
+
     public class Blog
     {
         public int BlogId { get; set; }
